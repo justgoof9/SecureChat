@@ -1,49 +1,4 @@
-# OSX
-#
-.DS_Store
-
-# Xcode
-#
-build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
-**/.xcode.env.local
-
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
-*.iml
-*.hprof
-.cxx/
-*.keystore
-!debug.keystore
-
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
+# Screenshots whenever they are needed.
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
 
@@ -57,13 +12,15 @@ yarn-error.log
 
 # Ruby / CocoaPods
 **/Pods/
+**/Gemfile.lock
 /vendor/bundle/
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
 
-# testing
+# Testing
 /coverage
+/__tests__/*.log
 
 # Yarn
 .yarn/*
@@ -72,3 +29,54 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Android
+android/.gradle/
+android/app/build/
+*.apk
+*.keystore
+
+# iOS
+ios/Pods/
+ios/build/
+ios/DerivedData/
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+
+# Watchman
+.watchmanconfig
+
+# Temporary files
+.temp/
+*.tmp
+*.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# React Native cache and generated files
+*.expo
+.expo-shared/
+*.packager
+*.happypack
+*.index
+
